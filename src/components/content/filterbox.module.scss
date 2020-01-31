@@ -1,0 +1,11 @@
+@import '../../styles/constants.scss';
+@import './box.scss';
+
+.listItem {
+  &.title {
+    background-color: $primary-color;
+    color: $white-color;
+    font-weight: bold;
+    font-size: 1em;
+  }
+}

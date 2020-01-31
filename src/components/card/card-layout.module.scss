@@ -1,0 +1,90 @@
+@import '../../styles/constants.scss';
+@import '../../styles/mixins.scss';
+@import './variables.scss';
+
+.resultContainer {
+  margin-bottom: $card-offset;
+  background-color: $white-color;
+}
+
+.mainFrame {
+  display: flex;
+
+  @include for-phone-only {
+    flex-direction: column;
+  }
+
+  @include for-tablet-portrait-up {
+    flex-direction: column;
+  }
+
+  @include for-tablet-landscape-up {
+    flex-direction: row;
+  }
+
+  @include for-desktop-up {
+    flex-direction: row;
+  }
+
+  @include for-big-desktop-up {
+    flex-direction: row;
+  }
+}
+
+.imageContainer {
+  flex: 6;
+}
+
+.info {
+  flex: 4;
+}
+
+summary.detail {
+  height: auto;
+  overflow: hidden;
+  transition: max-height .5s ease-in-out;
+  max-height: 0;
+  padding: 0 $summary-padding;
+
+  p {
+    line-height: 1.5em;
+    margin-bottom: 2em;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  h2 {
+    color: $primary-color;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: $summary-padding;
+    margin-bottom: $summary-padding;
+  }
+
+  &.expand {
+    max-height: 500px;
+    overflow: auto;
+  }
+}
+
+.more {
+  @include for-phone-only {
+    display: block;
+  }
+
+  @include for-tablet-portrait-up {
+    display: block;
+  }
+
+  @include for-tablet-landscape-up {
+    display: none;
+  }
+
+  @include for-desktop-up {
+    display: none;
+  }
+
+  @include for-big-desktop-up {
+    display: none;
+  }
+}

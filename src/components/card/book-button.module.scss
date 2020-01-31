@@ -1,0 +1,77 @@
+@import '../../styles/constants.scss';
+@import '../../styles/mixins.scss';
+
+.button {
+	width: 100%;
+	background-color: $secondary-color;
+	border: 0;
+	font-weight: bold;
+	color: #3a4b6d;
+	padding: 1em 0;
+	border-radius: 8px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+	@include for-tablet-portrait-up {
+    padding: 1em 0;
+	}
+
+	@include for-tablet-landscape-up {
+		padding: 0.5em 0;
+	}
+
+	@include for-desktop-up {
+		padding: 1em 0;
+	}
+
+	@include for-big-desktop-up {
+		padding: 1em 0;
+	}
+
+	&:hover {
+		opacity: 0.9;
+	}
+}
+
+.bookNow {
+	@include for-phone-only {
+		font-size: 1.5em;
+	}
+
+	@include for-tablet-portrait-up {
+    font-size: 1.5em;
+	}
+
+	@include for-tablet-landscape-up {
+		font-size: 1em;
+	}
+
+	@include for-desktop-up {
+		font-size: 1em;
+	}
+
+	@include for-big-desktop-up {
+		font-size: 1.5em;
+	}
+}
+.fee {
+	@include for-phone-only {
+		font-size: 2em;
+	}
+
+	@include for-tablet-portrait-up {
+    font-size: 2em;
+	}
+
+	@include for-tablet-landscape-up {
+		font-size: 1.5em;
+	}
+
+	@include for-desktop-up {
+		font-size: 1.5em;
+	}
+
+	@include for-big-desktop-up {
+		font-size: 2em;
+	}
+	
+}

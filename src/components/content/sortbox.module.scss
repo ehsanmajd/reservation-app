@@ -1,0 +1,28 @@
+@import '../../styles/mixins.scss';
+@import './box.scss';
+
+.listItem {
+  .iconHolder {
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.selected {
+      background: $primary-color;
+      color: $white-color;
+    }
+
+    .icon {
+      color: #ccc;
+    }
+  }
+
+  &.selected {
+    .iconHolder {
+      .icon {
+        color: $white-color;
+      }
+    }
+  }
+}

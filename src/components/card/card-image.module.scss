@@ -1,0 +1,37 @@
+@import '../../styles/constants.scss';
+@import '../../styles/mixins.scss';
+
+.image {
+	position: relative;
+
+	img {
+		width: 100%;
+	}
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: auto;
+	background-color: $white-color;
+	
+	@include for-phone-only {
+		display: none;
+	}
+
+	@include for-tablet-portrait-up {		
+		display: none;
+	}
+
+	@include for-tablet-landscape-up {		
+		display: block;
+	}
+
+	@include for-desktop-up {
+		display: block;
+	}
+
+	@include for-big-desktop-up {
+		display: block;
+	}
+}

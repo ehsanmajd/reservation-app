@@ -1,0 +1,13 @@
+.container {
+	display: flex;
+	height: 40vh;
+	justify-content: center;
+	align-items: center;
+
+	label {
+		font-weight: bold;
+		color: white;
+		font-size: 3em;
+		text-align: center;
+	}
+}

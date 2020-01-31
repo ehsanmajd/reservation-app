@@ -1,0 +1,98 @@
+@import '../../styles/constants.scss';
+@import '../../styles/mixins.scss';
+@import './variables.scss';
+
+.infoContainer {
+	padding: $info-padding-top $info-padding;
+	padding-bottom: $info-padding-bottom;
+}
+
+.title {
+	color: $primary-color;
+	text-transform: capitalize;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;	
+	@include for-phone-only {
+		font-size: 2em;
+	}
+	
+	@include for-tablet-portrait-up {
+		font-size: 2em;
+	}
+
+	@include for-tablet-landscape-up {
+    font-size: 1.2em;
+  }
+
+	@include for-desktop-up {
+		font-size: 1.5em;
+	}
+
+	@include for-big-desktop-up {
+		font-size: 2em;
+	}
+}
+
+p {
+	&.row {
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+		
+
+		@include for-phone-only {
+			line-height: 1.7em;
+		}
+
+		@include for-tablet-portrait-up {
+			line-height: 1.7em;
+		}
+
+		@include for-tablet-landscape-up {
+			line-height: 1.4em;
+		}
+		
+		@include for-desktop-up {
+			line-height: 1.7em;
+		}
+
+		@include for-big-desktop-up {
+			line-height: 2.5em;
+		}
+	}
+
+	&.location {
+		text-transform: capitalize;
+		color: #5E6D77;
+	
+		@include for-phone-only {
+			font-size: 1.5em;
+		}
+	
+		@include for-tablet-portrait-up {
+			font-size: 1.5em;
+		}
+	
+		@include for-tablet-landscape-up {
+			font-size: 1.1em;
+		}
+	
+		@include for-desktop-up {
+			font-size: 1.2em;
+		}
+	
+		@include for-big-desktop-up {
+			font-size: 1.5em;
+		}
+	}
+}
+
+.origin {
+	text-transform: capitalize;
+}
+
+.book {
+	width: 100%;
+	margin-top: $base-padding;
+}

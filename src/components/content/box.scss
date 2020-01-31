@@ -1,0 +1,53 @@
+@import '../../styles/constants.scss';
+@import '../../styles/mixins.scss';
+
+.box {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.box li:last-child {
+  border-bottom: none;
+}
+
+.listItem {
+  background-color: $white-color;
+  color: $primary-color;
+  border-bottom: solid 1px $primary-color;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 0.5em;
+  font-size: 1em;
+
+  &.selected {
+    background-color: $primary-color;
+    color: white;
+  }
+
+  @include for-phone-only {
+    padding: 1em;
+    font-size: 1.2em;
+  }
+
+  @include for-tablet-portrait-up {
+    padding: 0.6em;
+    font-size: 1em;
+  }
+
+  @include for-tablet-landscape-up {
+    padding: 0.8em;
+    font-size: 1em;
+  }
+
+  @include for-desktop-up {
+    padding: 1em;
+    font-size: 1.2em;
+  }
+
+  @include for-big-desktop-up {
+    padding: 1.2em;
+    font-size: 1.3em;
+  }
+}
