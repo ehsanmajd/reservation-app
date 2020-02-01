@@ -11,20 +11,21 @@
 	border-radius: 8px;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 
+	$padding-base: 1em;
 	@include for-tablet-portrait-up {
-    padding: 1em 0;
+    padding: $padding-base 0;
 	}
 
 	@include for-tablet-landscape-up {
-		padding: 0.5em 0;
+		padding: ($padding-base / 2) 0;
 	}
 
 	@include for-desktop-up {
-		padding: 1em 0;
+		padding: $padding-base 0;
 	}
 
 	@include for-big-desktop-up {
-		padding: 1em 0;
+		padding: $padding-base 0;
 	}
 
 	&:hover {
@@ -34,44 +35,44 @@
 
 .bookNow {
 	@include for-phone-only {
-		font-size: 1.5em;
+		font-size: $font-size-base * 3;
 	}
 
 	@include for-tablet-portrait-up {
-    font-size: 1.5em;
+    font-size: $font-size-base * 3;
 	}
 
 	@include for-tablet-landscape-up {
-		font-size: 1em;
+		font-size: $font-size-base * 2;
 	}
 
 	@include for-desktop-up {
-		font-size: 1em;
+		font-size: $font-size-base * 2;
 	}
 
 	@include for-big-desktop-up {
-		font-size: 1.5em;
+		font-size: $font-size-base * 3;
 	}
 }
 .fee {
 	@include for-phone-only {
-		font-size: 2em;
+		font-size: $font-size-base * 4;
 	}
 
 	@include for-tablet-portrait-up {
-    font-size: 2em;
+    font-size: $font-size-base * 4;
 	}
 
 	@include for-tablet-landscape-up {
-		font-size: 1.5em;
+		font-size: $font-size-base * 3;
 	}
 
 	@include for-desktop-up {
-		font-size: 1.5em;
+		font-size: $font-size-base * 3;
 	}
 
 	@include for-big-desktop-up {
-		font-size: 2em;
+		font-size: $font-size-base * 4;
 	}
 	
 }

@@ -1,3 +1,5 @@
+@import '../../styles/constants.scss';
+
 .container {
 	display: flex;
 	height: 40vh;
@@ -7,7 +9,7 @@
 	label {
 		font-weight: bold;
 		color: white;
-		font-size: 3em;
+		font-size: $font-size-base * 6;
 		text-align: center;
 	}
 }

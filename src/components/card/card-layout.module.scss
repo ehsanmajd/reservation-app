@@ -55,7 +55,7 @@ summary.detail {
 
   h2 {
     color: $primary-color;
-    font-size: 1.1em;
+    font-size: ($font-size-base * 2) + 0.1em;
     font-weight: bold;
     margin-top: $summary-padding;
     margin-bottom: $summary-padding;

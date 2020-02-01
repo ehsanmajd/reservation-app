@@ -14,15 +14,15 @@
 .link .linkText {
 	color: $primary-color;
 	@include for-tablet-landscape-up {
-    font-size: 1em;
+    font-size: $font-size-base * 2;
 	}
 
 	@include for-desktop-up {
-		font-size: 0.9em;
+		font-size: ($font-size-base * 2) - 0.1em;
 	}
 
 	@include for-big-desktop-up {
-		font-size: 1em;
+		font-size: $font-size-base * 2;
 	}
 }
 
@@ -32,4 +32,38 @@
 
 .handle {
 	margin-left: 10px;
+	color: $primary-color;
+
+	$animation-duration: 0.5s;
+	$animation-fill-mode: forwards;
+
+	animation-name: reverse-rotate-handle;
+	animation-duration: $animation-duration;
+	animation-fill-mode: $animation-fill-mode;
+
+	&.expand {
+		animation-name: rotate-handle;
+		animation-duration: $animation-duration;
+		animation-fill-mode: $animation-fill-mode;
+	}
+}
+
+$rotate-angle: 90deg;
+
+@keyframes reverse-rotate-handle {
+	0% {
+		transform: rotate($rotate-angle);
+	}
+	100% {
+		transform: rotate(0);
+	}
+}
+
+@keyframes rotate-handle {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate($rotate-angle);
+	}
 }

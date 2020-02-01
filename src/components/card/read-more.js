@@ -15,8 +15,8 @@ export default function ReadMore({ expand, onToggle }) {
 				</span>
 				<strong>{` ${expand ? locale.less : locale.more} ${locale.aboutHotel}`}</strong>
 			</div>
-			<div className={classes.handle}>
-				<FontAwesomeIcon icon={expand ? 'angle-down' : 'angle-right'} size={'2x'} color='#17317f' />
+			<div className={`${classes.handle} ${expand ? classes.expand : ''}`}>
+				<FontAwesomeIcon icon='angle-right' size={'2x'} />
 			</div>
 		</button>
 	);

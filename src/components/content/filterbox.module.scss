@@ -2,10 +2,16 @@
 @import './box.scss';
 
 .listItem {
+
+  &.filterItem {
+    padding: 3px 0.5em;
+    border-bottom: 0;
+  }
+
   &.title {
     background-color: $primary-color;
     color: $white-color;
     font-weight: bold;
-    font-size: 1em;
+    font-size: $font-size-base * 2;
   }
 }

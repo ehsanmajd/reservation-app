@@ -1,17 +1,18 @@
 @import '../../styles/mixins.scss';
+@import '../../styles/constants.scss';
 
 .stars {
-  color: yellow;
+  color: $secondary-color;
   display: flex;
 
   li {
-    font-size: 1.5em;
+    font-size: $font-size-base * 3;
     @include for-tablet-portrait-up {
-      font-size: 1em;
+      font-size: $font-size-base * 2;
     }
 
     @include for-tablet-landscape-up {
-      font-size: 1em;
+      font-size: $font-size-base * 2;
     }
   }
 }

@@ -45,7 +45,7 @@ export default function FilterBox({ dispatch }) {
 		<div className={classes.container}>
 			<ul className={classes.box}>
 				<li className={`${classes.listItem} ${classes.title}`}>{locale.filterYourResult}</li>
-				<li className={classes.listItem}>
+				<li className={`${classes.listItem} ${classes.filterItem}`}>
 					<DatePicker
 						label={locale.departureDate}
 						onChange={handleDeapartureDateChange}
@@ -55,7 +55,7 @@ export default function FilterBox({ dispatch }) {
 						style={{ width: '100%' }}
 					/>
 				</li>
-				<li className={`${classes.listItem}`}>
+				<li className={`${classes.listItem} ${classes.filterItem}`}>
 					<Autocomplete
 						value={airport}
 						onChange={handleDepartureAirportChange}
