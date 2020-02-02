@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Card from '../card';
 import Spinner from '../general/spinner';
 import NothingFound from './nothing-found';

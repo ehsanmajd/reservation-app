@@ -1,6 +1,5 @@
 import React from 'react';
 import { useLocale } from '../../hooks/useLocale';
-
 import classes from './book-button.module.scss';
 
 

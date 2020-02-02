@@ -1,9 +1,7 @@
 import React from 'react';
 import moment from 'moment';
-
 import Rating from './rating';
 import BookButton from './book-button';
-
 import classes from './card-info.module.scss';
 import { useLocale } from '../../hooks/useLocale';
 

@@ -1,10 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 import { useLocale } from '../../hooks/useLocale';
 import * as CONSTANTS from '../../constants';
 import { sort } from '../../stateManager/actions';
-
 import classes from './sortbox.module.scss';
 
 

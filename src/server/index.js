@@ -1,5 +1,6 @@
 /* This module simulates a simple server and 
- * produces some fake data for running the app
+ * produces some fake data for running the app.
+ * The business logic of the app is written in thie module.
 */
 import moment from 'moment';
 import * as CONSTANTS from '../constants';

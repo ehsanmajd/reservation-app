@@ -5,7 +5,7 @@ import { useLocale } from '../../hooks/useLocale';
 export default function NothingFound() {
 	const locale = useLocale();
 	return (
-		<div className={classes.container}>
+		<div className={classes.container} data-testid='not-found'>
 			<label>{locale.nothingFound}</label>
 		</div>
 	);

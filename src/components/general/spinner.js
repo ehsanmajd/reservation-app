@@ -2,5 +2,5 @@ import React from 'react';
 import classes from './spinner.module.css';
 
 export default function Spinner() {
-	return <div className={classes.loader} />
+	return <div className={classes.loader} data-testid='spinner' />
 }

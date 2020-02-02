@@ -2,11 +2,9 @@ import React, { useState, useEffect } from 'react';
 import TextField from '@material-ui/core/TextField';
 import Autocomplete from '@material-ui/lab/Autocomplete';
 import { DatePicker } from '@material-ui/pickers';
-
 import { useLocale } from '../../hooks/useLocale';
 import * as server from '../../server';
 import { search } from '../../stateManager/actions';
-
 import classes from './filterbox.module.scss';
 
 export default function FilterBox({ dispatch }) {

@@ -1,6 +1,5 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 import { useLocale } from '../../hooks/useLocale';
 import classes from './read-more.module.scss';
 

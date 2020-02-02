@@ -1,6 +1,5 @@
 import { reducer, initialState } from './reducer';
 
-
 test('change the sort to alphabetically', () => {
 	const newState = reducer(initialState, {
 		type: 'SORT_CHANGED',

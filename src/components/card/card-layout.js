@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
-
 import CardImage from './card-image';
 import Info from './card-info';
 import ReadMore from './read-more';
-
 import classes from './card-layout.module.scss';
 
 export default function CardLayout(
@@ -30,7 +28,7 @@ export default function CardLayout(
 	}
 
 	return (
-		<div className={classes.resultContainer}>
+		<div className={classes.resultContainer} data-testid='card-item'>
 			<div className={classes.mainFrame}>
 				<section className={classes.imageContainer}>
 					<CardImage

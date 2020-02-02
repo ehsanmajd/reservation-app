@@ -1,6 +1,5 @@
 import React from 'react';
 import ReadMore from './read-more';
-
 import classes from './card-image.module.scss';
 
 export default function CardImage({ expand, url, onToggle, name }) {
