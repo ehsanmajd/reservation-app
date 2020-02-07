@@ -25,7 +25,8 @@ export default function FilterBox({ dispatch }) {
 		setDate(value);
 		dispatch(
 			search({
-				departureDate: value
+				departureDate: value,
+				departureAirport: airport
 			})
 		);
 	}
@@ -34,6 +35,7 @@ export default function FilterBox({ dispatch }) {
 		setAirport(value);
 		dispatch(
 			search({
+				departureDate: date,
 				departureAirport: !!value ? value.name : null
 			})
 		);
